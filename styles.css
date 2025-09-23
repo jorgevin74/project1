@@ -1,0 +1,51 @@
+:root{
+    --body-background-color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--body-background-color);
+    padding: 2em;
+}
+
+.hp-section{
+    font-size: 3em;
+    display: flex;
+    gap: 20px;
+}
+
+#health{
+    flex-direction: row-reverse;
+    visibility: hidden;
+}
+
+#health-2{
+    flex-direction: row-reverse;
+    visibility: hidden;
+}
+
+#health-3{
+    flex-direction: row-reverse;
+    visibility: hidden;
+}
+
+#health-4{
+    flex-direction: row-reverse;
+    visibility: hidden;
+}
+
+#health-5{
+    flex-direction: row-reverse;
+    visibility: hidden;
+}
+
+#message{
+    color: lightgray;
+}
+
+#main_character{
+    font-size: 1em;
+}
