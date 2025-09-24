@@ -25,7 +25,7 @@ strtBtn.addEventListener("click", () => {
   text.style.visibility = "visible";
   split();
   // animate words
-  gsap.from(split.lines, {
+  gsap.from(split.words, {
     duration: 2,
     y: 100,
     autoAlpha: 0,
