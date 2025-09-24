@@ -1,38 +1,33 @@
-gsap.registerPlugin(SplitText) 
+gsap.registerPlugin(SplitText);
 
-const title_card = document.getElementById("title");
-const strtBtn = document.getElementById("start");
-const text = document.getElementById("prompt");
+strtBtn = document.getElementById("start");
 
-const option_1 = document.getElementById("option_1");
-const option_2 = document.getElementById("option_2");
-const option_3 = document.getElementById("option_3");
+let split = SplitText.create(".text-container", { type: "words, chars, lines" });
 
-// split elements with the class "split" into words and characters
+// now animate the characters in a staggered fashion
+// gsap.from(split.words, {
+//     y: -100,
+//     opacity: 0,
+//     rotation: "random(-80, 80)",
+//     duration: 0.7, 
+//     ease: "back",
+//     stagger: 0.15
+// });
 
-function split(){
-  split = SplitText.create(".text-container", { type: "words, chars, lines" });
-  return split;
-}
-
-strtBtn.addEventListener("click", () => {
-  // reveal UI first
-  option_1.style.visibility = "visible";
-  option_2.style.visibility = "visible";
-  option_3.style.visibility = "visible";
-  title_card.style.visibility = "hidden";
-  strtBtn.style.visibility = "hidden";
-  text.style.visibility = "visible";
-  split();
-  // animate words
-  gsap.from(split.words, {
-    duration: 2,
-    y: 100,
-    autoAlpha: 0,
-    stagger: 0.05
-  });
-});
-
-
-
+  gsap.from(split.chars, {
+    x: 150,
+    opacity: 0,
+    duration: 2, 
+    ease: "power4",
+    stagger: 0.04
+  })
+  
+  // gsap.from(split.lines, {
+  //   rotationX: -100,
+  //   transformOrigin: "50% 50% -160px",
+  //   opacity: 0,
+  //   duration: 0.8, 
+  //   ease: "power3",
+  //   stagger: 0.25
+  // })
 

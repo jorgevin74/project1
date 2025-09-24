@@ -1,63 +1,61 @@
-:root{
-    --body-background-color: black;
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: black;
 }
 
-html{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-#wrapper{
-    margin: 0 auto;
-
-    max-width: 1900px;
-
-    display: flex;
-
-    flex-wrap: wrap;
-}
-
-nav{
-    order: 1;
-    flex: 1 0 100%;
-}
-
-main{
-    order: 2;
-    flex: 1 1 100% ;
-    display: flex;
-    justify-content: center;
-}
-
-.button{
-    background-color: black;
-    color: white;
-    border-radius: 10px;
+.container {
+  position: relative;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 9px;
 }
 
 .text-container{
-    color: lightgray;
-    font-size: 4rem;
-    line-height: 1.2;
-    box-sizing: border-box;
-    padding: 5%;
-    width: 100%;
-    text-align: center;
-    perspective: 500px;
-    visibility: hidden;
+  color: white;
+  font-size: 3rem;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 5%;
+  width: 100%;
+  text-align: center;
+  perspective: 500px;
 }
 
-#option_1, #option_2, #option_3{
-    visibility: hidden;
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
+.button {
+ padding-left: 33px;
+ padding-right: 33px;
+ padding-bottom: 16px;
+ padding-top: 16px;
+ border-radius: 9px;
+ background: #d5f365;
+ border: none;
+ font-family: inherit;
+ text-align: center;
+ cursor: pointer;
+ transition: 0.4s;
+ font-size: 1.5rem;
+}
+.button:hover {
+ box-shadow: 7px 5px 56px -14px #C3D900;
+}
 
+.button:active {
+ transform: scale(0.97);
+ box-shadow: 7px 5px 56px -10px #C3D900;
+}
