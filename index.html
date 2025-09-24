@@ -8,32 +8,33 @@
 </head>
 <body>
 
-  <div class="wrapper">
+  <div id="wrapper">
 
-  <div class="hp-section">
-    <div id="health">&hearts;</div>
-    <div id="health-2">&hearts;</div>
-    <div id="health-3">&hearts;</div>
-    <div id="health-4">&hearts;</div>
-    <div id="health-5">&hearts;</div>
-  </div>
-
-  <div class="title-card">
-    <div id="title"><h1>Project Title Placeholder</h1></div>
-    <div id="message"><h3>Press Start To Begin</h3></div>
-  </div>
-
-  <h1 id="main_character">Bob</h1>
+    <nav class="health/volume">
+      <!-- &hearts; -->
+    </nav>
 
 
-  <button id="start" type="button">Start</button>
+  <main class="game-area">
+    <h1 id="title">Project Title Here</h1>
+    <button id="start" class="button">Start</button>
+    <button id="option_1" class="button">Example 1</button>
+    <button id="option_2" class="button">Example 2</button>
+    <button id="option_3" class="button">Example 3</button>
+  </main>
 
-  <button id="restart" type="button">Restart</button>
-        
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+      <div class="text-container">
+        <span id="prompt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam fugiat aliquid quis sint illum perspiciatis eum rerum expedita numquam</span>
+    </div>
 
-  <script src="script.js"></script>
+
 
   </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 

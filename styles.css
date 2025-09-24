@@ -1,51 +1,63 @@
 :root{
-    --body-background-color: white;
+    --body-background-color: black;
 }
 
 html{
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: var(--body-background-color);
-    padding: 2em;
-}
-
-.hp-section{
-    font-size: 3em;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-#health{
-    flex-direction: row-reverse;
-    visibility: hidden;
+#wrapper{
+    margin: 0 auto;
+
+    max-width: 1900px;
+
+    display: flex;
+
+    flex-wrap: wrap;
 }
 
-#health-2{
-    flex-direction: row-reverse;
-    visibility: hidden;
+nav{
+    order: 1;
+    flex: 1 0 100%;
 }
 
-#health-3{
-    flex-direction: row-reverse;
-    visibility: hidden;
+main{
+    order: 2;
+    flex: 1 1 100% ;
+    display: flex;
+    justify-content: center;
 }
 
-#health-4{
-    flex-direction: row-reverse;
-    visibility: hidden;
+.button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
 }
 
-#health-5{
-    flex-direction: row-reverse;
-    visibility: hidden;
-}
-
-#message{
+.text-container{
     color: lightgray;
+    font-size: 4rem;
+    line-height: 1.2;
+    box-sizing: border-box;
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+    perspective: 500px;
+    visibility: hidden;
 }
 
-#main_character{
-    font-size: 1em;
+#option_1, #option_2, #option_3{
+    visibility: hidden;
 }
+
+
