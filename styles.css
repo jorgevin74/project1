@@ -3,10 +3,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: auto;
   min-height: 100vh;
   overflow: hidden;
-  background-color: black;
+  background-color: #111111;
 }
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+  pointer-events: none;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+
 
 .container {
   position: relative;
@@ -61,12 +93,13 @@ body {
 }
 
 .button {
+  color: white;
  padding-left: 33px;
  padding-right: 33px;
  padding-bottom: 16px;
  padding-top: 16px;
  border-radius: 9px;
- background: #d5f365;
+ background: #343a40;
  border: none;
  font-family: inherit;
  text-align: center;
@@ -75,11 +108,165 @@ body {
  font-size: 1.5rem;
  gap: 5px;
 }
+
 .button:hover {
- box-shadow: 7px 5px 56px -14px #C3D900;
+ box-shadow: 7px 5px 56px -14px #6c757d;
 }
 
 .button:active {
  transform: scale(0.97);
- box-shadow: 7px 5px 56px -10px #C3D900;
+ box-shadow: 7px 5px 56px -10px #6c757d;
+}
+
+
+#prompttwo, #option-1{
+  color: white;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #7f5539;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 1.5rem;
+  gap: 5px;
+}
+
+
+#prompttwo, #option-1:hover {
+ box-shadow: 7px 5px 56px -14px #9c6644;
+}
+
+#prompttwo, #option-1:active {
+ transform: scale(0.97);
+ box-shadow: 7px 5px 56px -10px #9c6644;
+}
+
+#option-2{
+  color: white;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #93a3bc;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 1.5rem;
+  gap: 5px;
+}
+
+
+#option-2:hover {
+ box-shadow: 7px 5px 56px -14px #a7b0ca;
+}
+
+#option-2:active {
+ transform: scale(0.97);
+ box-shadow: 7px 5px 56px -10px #a7b0ca;
+}
+
+#option-fun{
+  color: white;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #8897aa;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 1.5rem;
+  gap: 5px;
+}
+
+
+#option-fun:hover {
+ box-shadow: 7px 5px 56px -14px #a7b0ca;
+}
+
+#option-fun:active {
+ transform: scale(0.97);
+ box-shadow: 7px 5px 56px -10px #a7b0ca;
+}
+
+#option-fog{
+  color: black;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #adb5bd;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 1.5rem;
+  gap: 5px;
+}
+
+
+#option-fog:hover {
+ box-shadow: 7px 5px 56px -14px #ddd4cc;
+}
+
+#option-fog:active {
+ transform: scale(0.97);
+ box-shadow: 7px 5px 56px -10px #ddd4cc;
+}
+
+
+#option-city{
+  color: black;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background:#4a4e69 ;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 1.5rem;
+  gap: 5px;
+}
+
+
+#option-city:hover {
+ box-shadow: 7px 5px 56px -14px #22223b;
+}
+
+#option-city:active {
+ transform: scale(0.97);
+ box-shadow: 7px 5px 56px -10px #22223b;
+}
+
+
+@media (max-width: 400px) {
+  .text-container{
+    font-size: 1rem;
+    height: auto;
+  }
+
+  .text-container-lines{
+    font-size: 1rem;
+  }
+
+  .text-container-chars{
+    font-size: 1rem;
+  }
 }
