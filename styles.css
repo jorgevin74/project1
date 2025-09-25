@@ -29,6 +29,29 @@ body {
   perspective: 500px;
 }
 
+.text-container-lines{
+  color: white;
+  font-size: 3rem;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 5%;
+  width: 100%;
+  text-align: center;
+  perspective: 500px;
+}
+
+.text-container-chars{
+    color: white;
+  font-size: 3rem;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 5%;
+  width: 100%;
+  text-align: center;
+  perspective: 500px;
+}
+
+
 .button-wrapper {
   display: flex;
   align-items: center;
@@ -50,6 +73,7 @@ body {
  cursor: pointer;
  transition: 0.4s;
  font-size: 1.5rem;
+ gap: 5px;
 }
 .button:hover {
  box-shadow: 7px 5px 56px -14px #C3D900;

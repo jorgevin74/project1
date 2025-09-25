@@ -2,7 +2,13 @@ gsap.registerPlugin(SplitText);
 
 strtBtn = document.getElementById("start");
 
-let split = SplitText.create(".text-container", { type: "words, chars, lines" });
+let split;
+
+function splitInstance(){
+  split = SplitText.create(".text-container", { type: "words, chars, lines" });
+  return split;
+};
+
 
 // now animate the characters in a staggered fashion
 // gsap.from(split.words, {
@@ -14,13 +20,14 @@ let split = SplitText.create(".text-container", { type: "words, chars, lines" })
 //     stagger: 0.15
 // });
 
+  splitInstance();
   gsap.from(split.chars, {
     x: 150,
     opacity: 0,
     duration: 2, 
     ease: "power4",
     stagger: 0.04
-  })
+  });
   
   // gsap.from(split.lines, {
   //   rotationX: -100,
