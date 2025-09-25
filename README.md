@@ -43,7 +43,7 @@ https://www.figma.com/design/CmW42tNrlJ4H8HQzBbnvyE/MEDP-33100---Project-1-Desig
 - List any third-party assets used in the project (e.g., sound effects, images, fonts) and provide proper attribution.
 - Acknowledge any resources, tutorials, or references you used to help complete the project.
 
-There is a website, called codewithrandom.com where I grabbed a piece of coding for the static background! they had multiple ones to offer but that one since it had a bit of static and horror-ish element to it, I really liked it and chose that as well. There is another one that I got from office hours that helped with the button to create the little glow effect that I enjoyed it was from universe.io/buttons and also gsap animation with the split text to ensure that it comes in nicely
+There is a website, called codewithrandom.com where I grabbed a piece of coding for the static background! they had multiple ones to offer but that one since it had a bit of static and horror-ish element to it, I really liked it and chose that as well. There is another one that I got from office hours that helped with the button to create the little glow effect that I enjoyed it was from universe.io/buttons and also gsap animation with the split text to ensure that it comes in nicely. There is also the color generator website called coolers where it generates or you can select different colour palletes to choose from and you can copy and paste their hex code! https://coolors.co/
 
 ## Future Enhancements
 

@@ -174,13 +174,13 @@ body {
 }
 
 #option-fun{
-  color: white;
+  color: black;
   padding-left: 33px;
   padding-right: 33px;
   padding-bottom: 16px;
   padding-top: 16px;
   border-radius: 9px;
-  background: #8897aa;
+  background: #dee2e6;
   border: none;
   font-family: inherit;
   text-align: center;
