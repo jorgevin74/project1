@@ -22,7 +22,7 @@ function splitInstance_3(){
       y: -100,
       opacity: 0,
       rotation: "random(-80, 80)",
-      duration: 2, 
+      duration: 2.5, 
       ease: "back",
       stagger: 0.15
   });
@@ -32,7 +32,7 @@ function splitInstance_3(){
     rotationX: -100,
     transformOrigin: "50% 50% -160px",
     opacity: 0,
-    duration: 2, 
+    duration: 2.5, 
     ease: "power3",
     stagger: 1.7
   });
@@ -42,7 +42,7 @@ function splitInstance_3(){
   gsap.from(split_3.chars, {
     x: 150,
     opacity: 0,
-    duration: 2, 
+    duration: 2.5, 
     ease: "power4",
     stagger: 0.04
   });

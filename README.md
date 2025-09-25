@@ -15,6 +15,8 @@ the purpose of this project was that I wanted to tell a story through the use of
 
 - Provide a link to the Figma design of the webpage.
 
+https://www.figma.com/design/CmW42tNrlJ4H8HQzBbnvyE/MEDP-33100---Project-1-Designs--Copy-?node-id=0-1&t=usI4SbHzUW3pJVVy-1
+
 ## Features
 
 - List the key features of the project, including:
@@ -23,7 +25,7 @@ the purpose of this project was that I wanted to tell a story through the use of
     - **User-triggered Events**: Explain how users interact with the page (e.g., clicking, scrolling, hovering) and how the page responds.
     - **Responsive Design**: Explain how the design adapts to different devices (e.g., desktop, tablet, mobile).
 
-    I used different types of split animations for the text, so that there would be an effect where the text can be split up by individual words, or individual characters or also lines that are grouped together to add a bit of an effect into the story as well. Saldy due to time constraints there wasn't many sound effects that I couldv'e added but would've loved to if I could. user triggered events is definetly the clicking of the buttons and hovering over the buttons where the user would hover over and there would be a glow that would signifiy that this is the button that you can click on 
+    I used different types of split animations for the text, so that there would be an effect where the text can be split up by individual words, or individual characters or also lines that are grouped together to add a bit of an effect into the story as well. Saldy due to time constraints there wasn't many sound effects that I couldv'e added but would've loved to if I could. user triggered events is definetly the clicking of the buttons and hovering over the buttons where the user would hover over and there would be a glow that would signifiy that this is the button that you can click on. There was also the aspect of the responive design where I would lower the font of the text so that when you are on smaller screens, the big text doesn't overwhelm the phone and have everything else overflow. So i can change the font size so that everything still stays central
 
 ## Technologies Used
 
